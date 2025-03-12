@@ -1,0 +1,14 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.22.xsd">
+    <changeSet id="02-insert-role" author="heleno.souza">
+        <sql>
+            INSERT INTO `role` (id, nome, data_cadastro, data_alteracao) VALUES('4a585f37-bf74-427b-b37c-6a8ec3792b68', 'USER', '2025-03-12 02:39:10.418727', '2025-03-12 02:39:10.418727');
+            INSERT INTO `role` (id, nome, data_cadastro, data_alteracao) VALUES('8de371fe-a5b9-4eb5-a369-10dec9f025bf', 'ADMIN', '2025-03-12 02:38:19.894541', '2025-03-12 02:38:19.894541');
+        </sql>
+    </changeSet>
+
+
+</databaseChangeLog>

@@ -1,0 +1,56 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.22.xsd">
+    <changeSet id="1-inicializacao" author="heleno.souza">
+        <sql>
+            -- Tabela: usuario
+            CREATE TABLE `usuario`
+            (
+                `id`             CHAR(36)     NOT NULL,
+                `nome`           VARCHAR(255) NOT NULL,
+                `email`          VARCHAR(100) NOT NULL,
+                `senha`          VARCHAR(255) NOT NULL,
+                `status`         ENUM('ATIVO', 'CANCELADO', 'EXCLUIDO', 'INATIVO') NOT NULL,
+                `data_cadastro`  DATETIME(6)  DEFAULT NULL,
+                `data_alteracao` DATETIME(6)  DEFAULT NULL,
+                PRIMARY KEY (`id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Tabela: role
+            CREATE TABLE `role`
+            (
+                `id`             CHAR(36)    NOT NULL,
+                `nome`           VARCHAR(50) NOT NULL,
+                `data_cadastro`  DATETIME(6)  DEFAULT NULL,
+                `data_alteracao` DATETIME(6)  DEFAULT NULL,
+                PRIMARY KEY (`id`),
+                UNIQUE KEY `UK_role_nome` (`nome`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- Tabela: usuario_role
+            CREATE TABLE `usuario_role`
+            (
+                `id`             CHAR(36) NOT NULL,
+                `usuario_id`     CHAR(36) NOT NULL,
+                `role_id`        CHAR(36) NOT NULL,
+                `data_cadastro`  DATETIME(6)  DEFAULT NULL,
+                `data_alteracao` DATETIME(6)  DEFAULT NULL,
+                PRIMARY KEY (`id`),
+                KEY              `FK_usuario_role_role` (`role_id`),
+                KEY              `FK_usuario_role_usuario` (`usuario_id`),
+                CONSTRAINT `FK_usuario_role_role`
+                    FOREIGN KEY (`role_id`)
+                        REFERENCES `role` (`id`),
+                CONSTRAINT `FK_usuario_role_usuario`
+                    FOREIGN KEY (`usuario_id`)
+                        REFERENCES `usuario` (`id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+        </sql>
+    </changeSet>
+
+
+</databaseChangeLog>

@@ -1,0 +1,18 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.22.xsd">
+
+    <changeSet id="09-insert-pedidos-items" author="heleno.souza">
+        <sql>
+            INSERT INTO pedido_item (id, pedido_id, produto_id, quantidade, preco_produto, data_cadastro, data_alteracao) VALUES('0e4d2751-1476-45bc-b382-0f40ba168aa0', '7afb0e07-44c1-462a-bcf7-b164fd3ac9db', '2e2638f8-93bb-407b-b4c6-c03a0f1d2a9f', 10, 11, NULL, NULL);
+            INSERT INTO pedido_item (id, pedido_id, produto_id, quantidade, preco_produto, data_cadastro, data_alteracao) VALUES('23a67265-49d4-4d8a-a67e-62ba592caa39', '7afb0e07-44c1-462a-bcf7-b164fd3ac9db', '238615db-6b49-4517-923d-1975da12e58f', 5, 22, NULL, NULL);
+            INSERT INTO pedido_item (id, pedido_id, produto_id, quantidade, preco_produto, data_cadastro, data_alteracao) VALUES('291d9ebe-cf03-4765-a4e0-b3dc0889b080', 'd7ff6faa-d1d6-4b84-a0d6-c82bdc58ec47', '2e2638f8-93bb-407b-b4c6-c03a0f1d2a9f', 1, 11, NULL, NULL);
+            INSERT INTO pedido_item (id, pedido_id, produto_id, quantidade, preco_produto, data_cadastro, data_alteracao) VALUES('6543c171-5893-4372-95a9-3c9c872485e8', '08b74a07-f061-4dc8-98ea-5b34ade29c82', '2e2638f8-93bb-407b-b4c6-c03a0f1d2a9f', 1, 11, NULL, NULL);
+            INSERT INTO pedido_item (id, pedido_id, produto_id, quantidade, preco_produto, data_cadastro, data_alteracao) VALUES('a403e6d1-cb23-48a5-bd09-f0d044a1027f', 'd7ff6faa-d1d6-4b84-a0d6-c82bdc58ec47', '238615db-6b49-4517-923d-1975da12e58f', 2, 22, NULL, NULL);
+            INSERT INTO pedido_item (id, pedido_id, produto_id, quantidade, preco_produto, data_cadastro, data_alteracao) VALUES('a5252050-1d64-4f27-8abf-5e0a1194e29e', '08b74a07-f061-4dc8-98ea-5b34ade29c82', '238615db-6b49-4517-923d-1975da12e58f', 2000, 22, NULL, NULL);
+            INSERT INTO pedido_item (id, pedido_id, produto_id, quantidade, preco_produto, data_cadastro, data_alteracao) VALUES('cd85e70a-43f8-4942-a1de-cc8b38a2b51d', '2042c7dc-5b40-45cc-97e9-b4b929694448', '3cd1ee11-df11-4974-83c7-93e37bc21fbc', 5, 1999, NULL, NULL);
+        </sql>
+    </changeSet>
+</databaseChangeLog>

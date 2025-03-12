@@ -1,0 +1,20 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.22.xsd">
+
+    <changeSet id="07-insert-produtos" author="heleno.souza">
+        <sql>
+            INSERT INTO produto (id, nome, descricao, preco, categoria, quantidade_em_estoque, data_cadastro, data_alteracao) VALUES('238615db-6b49-4517-923d-1975da12e58f', 'ARROZ 5KG', 'ARROZ DO BOM', 22, 'ALIMENTO', 192, '2025-03-12 03:59:07.618115', '2025-03-12 04:55:43.267294');
+            INSERT INTO produto (id, nome, descricao, preco, categoria, quantidade_em_estoque, data_cadastro, data_alteracao) VALUES('2e2638f8-93bb-407b-b4c6-c03a0f1d2a9f', 'PENDRIVE 8GB', 'PENDRIVE DO BOM', 11, 'ELETRONICO', 189, '2025-03-12 04:01:39.909345', '2025-03-12 04:55:43.267294');
+            INSERT INTO produto (id, nome, descricao, preco, categoria, quantidade_em_estoque, data_cadastro, data_alteracao) VALUES('3cd1ee11-df11-4974-83c7-93e37bc21fbc', 'MONITOR 20POL', 'MONITOR DO BOM', 1999, 'ELETRONICO', 195, '2025-03-12 04:00:55.017529', '2025-03-12 04:56:51.863586');
+            INSERT INTO produto (id, nome, descricao, preco, categoria, quantidade_em_estoque, data_cadastro, data_alteracao) VALUES('3ea2125a-0cab-4ec4-bda2-3e0d0ee10cc7', 'MEMORIA RAM 4GB', 'MEMORIA DO BOM', 129, 'ELETRONICO', 200, '2025-03-12 04:01:15.721268', '2025-03-12 04:01:15.721268');
+            INSERT INTO produto (id, nome, descricao, preco, categoria, quantidade_em_estoque, data_cadastro, data_alteracao) VALUES('491d10da-69c9-4ee4-83a6-30c646f27b77', 'TRIGO 1KG', 'TRIGO DO BOM', 2, 'ALIMENTO', 200, '2025-03-12 03:59:39.131387', '2025-03-12 03:59:39.131387');
+            INSERT INTO produto (id, nome, descricao, preco, categoria, quantidade_em_estoque, data_cadastro, data_alteracao) VALUES('5df72d3e-b635-465e-adf9-b4764aaad9c4', 'ARROZ 1KG', 'ARROZ DO BOM', 20, 'ALIMENTO', 200, '2025-03-12 03:58:54.638389', '2025-03-12 03:58:54.638389');
+            INSERT INTO produto (id, nome, descricao, preco, categoria, quantidade_em_estoque, data_cadastro, data_alteracao) VALUES('87594f83-4c39-42ac-b9ad-b7590257b832', 'PENDRIVE 16GB', 'PENDRIVE DO BOM', 26, 'ELETRONICO', 200, '2025-03-12 04:01:48.082753', '2025-03-12 04:01:48.082753');
+            INSERT INTO produto (id, nome, descricao, preco, categoria, quantidade_em_estoque, data_cadastro, data_alteracao) VALUES('bc0d308b-6079-479d-87f3-57c76868d12c', 'BISCOITO 500G', 'BISCOITO DO BOM', 2, 'ALIMENTO', 200, '2025-03-12 04:00:26.902506', '2025-03-12 04:00:26.902506');
+            INSERT INTO produto (id, nome, descricao, preco, categoria, quantidade_em_estoque, data_cadastro, data_alteracao) VALUES('cc6a462a-e44f-437a-9597-4c7f12064fb5', 'PENDRIVE 32GB', 'PENDRIVE DO BOM', 59, 'ELETRONICO', 200, '2025-03-12 04:21:48.721416', '2025-03-12 04:21:48.721416');
+        </sql>
+    </changeSet>
+</databaseChangeLog>

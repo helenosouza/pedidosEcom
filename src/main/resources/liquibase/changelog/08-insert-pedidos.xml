@@ -1,0 +1,15 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.22.xsd">
+
+    <changeSet id="08-insert-pedidos" author="heleno.souza">
+        <sql>
+            INSERT INTO pedido (id, usuario_id, valor_total, status, data_pagamento, data_cadastro, data_alteracao) VALUES('08b74a07-f061-4dc8-98ea-5b34ade29c82', 'c359c343-d544-4f72-acaa-3b29d9d2e5d6', 44011, 'CANCELADO', NULL, '2025-03-12 04:45:09.548170', '2025-03-12 04:52:06.036748');
+            INSERT INTO pedido (id, usuario_id, valor_total, status, data_pagamento, data_cadastro, data_alteracao) VALUES('2042c7dc-5b40-45cc-97e9-b4b929694448', '03dda2cd-01b2-4c92-a95a-4de12e520e2d', 9995, 'PAGO', '2025-03-12 04:56:51.863045', '2025-03-12 04:56:29.020246', '2025-03-12 04:56:51.863586');
+            INSERT INTO pedido (id, usuario_id, valor_total, status, data_pagamento, data_cadastro, data_alteracao) VALUES('7afb0e07-44c1-462a-bcf7-b164fd3ac9db', '03dda2cd-01b2-4c92-a95a-4de12e520e2d', 220, 'PAGO', '2025-03-12 04:55:43.266241', '2025-03-12 04:55:11.378546', '2025-03-12 04:55:43.267294');
+            INSERT INTO pedido (id, usuario_id, valor_total, status, data_pagamento, data_cadastro, data_alteracao) VALUES('d7ff6faa-d1d6-4b84-a0d6-c82bdc58ec47', 'c359c343-d544-4f72-acaa-3b29d9d2e5d6', 55, 'PAGO', '2025-03-12 04:44:35.255257', '2025-03-12 04:42:31.143568', '2025-03-12 04:44:35.257335');
+        </sql>
+    </changeSet>
+</databaseChangeLog>

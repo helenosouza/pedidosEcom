@@ -1,0 +1,23 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.22.xsd">
+    <changeSet id="03-insert-usuario" author="heleno.souza">
+        <sql>
+            INSERT INTO usuario (id, nome, email, senha, status, data_cadastro, data_alteracao) VALUES('03dda2cd-01b2-4c92-a95a-4de12e520e2d', 'Xavier', 'xavier@gmail.com', '{bcrypt}$2a$10$iACjgUqcQeoWkxXOSOeRP.irWu/Ca.w/RqoxNCnv0eRuG8kfdmq0e', 'ATIVO', '2025-03-12 02:59:02.347522', '2025-03-12 02:59:02.347522');
+            INSERT INTO usuario (id, nome, email, senha, status, data_cadastro, data_alteracao) VALUES('0808d747-1a44-41ae-aae6-02a4a16e530d', 'Jakeline', 'jakeline@gmail.com', '{bcrypt}$2a$10$9vIVwIlvwa.NkkHiL5Zkc.oIiQs33stKT4sY3c0ticNMbG4eimVLm', 'ATIVO', '2025-03-12 02:59:25.951400', '2025-03-12 02:59:25.951400');
+            INSERT INTO usuario (id, nome, email, senha, status, data_cadastro, data_alteracao) VALUES('13ca4c3b-3d57-4789-bff2-efffc5b93473', 'Anderson', 'anderson@gmail.com', '{bcrypt}$2a$10$ksgL3lzzRWOosJ9qibDLEO.vcbhDYDd28gI0IOSL3zoOwu7iiK1eO', 'ATIVO', '2025-03-12 02:57:45.192970', '2025-03-12 02:57:45.192970');
+            INSERT INTO usuario (id, nome, email, senha, status, data_cadastro, data_alteracao) VALUES('14c5f242-cf0d-4227-b92e-252c49677942', 'Abreu', 'abreu@gmail.com', '{bcrypt}$2a$10$8cpO91CKogA8CVq/Xprnwe.HVQsK1n3hLXRBtqEzgtn3g7gcB6xzi', 'ATIVO', '2025-03-12 02:59:13.345747', '2025-03-12 02:59:13.345747');
+            INSERT INTO usuario (id, nome, email, senha, status, data_cadastro, data_alteracao) VALUES('33ef6175-e98e-42a9-84f3-50896e9b1001', 'Pedro', 'pedro@gmail.com', '{bcrypt}$2a$10$owneDU2JkXS8rHUx1h18OOTLKlcs/07O6XEmFOo5nijD50Usv3TwK', 'ATIVO', '2025-03-12 02:59:42.465298', '2025-03-12 02:59:42.465298');
+            INSERT INTO usuario (id, nome, email, senha, status, data_cadastro, data_alteracao) VALUES('50c03447-2f6a-45cd-a2f0-d723cbcf1650', 'Kaio', 'kaio@gmail.com', '{bcrypt}$2a$10$V8RYZ1CYgTlZPlUxbTTkleM08kPmf1OTgCmR30vZu2fizsySwUUj.', 'ATIVO', '2025-03-12 02:59:34.009188', '2025-03-12 02:59:34.009188');
+            INSERT INTO usuario (id, nome, email, senha, status, data_cadastro, data_alteracao) VALUES('9fab7257-b25d-46dc-8e2c-4777a94c0243', 'Juliana', 'juliana@gmail.com', '{bcrypt}$2a$10$pkM0LiVXMjND0iCW1qBcuedYvzvKR4ZI5yLZYk/JbXj2T9yZUYn4S', 'ATIVO', '2025-03-12 02:58:50.244040', '2025-03-12 02:58:50.244040');
+            INSERT INTO usuario (id, nome, email, senha, status, data_cadastro, data_alteracao) VALUES('b01c03a9-42a2-4f2f-9b1b-566532587aed', 'Kaury', 'kaury@gmail.com', '{bcrypt}$2a$10$4vFnMHHUCsHqR/Aa8UoWVeYWsTCYhpv3Bz8feMIQsIROanyWhgaQG', 'ATIVO', '2025-03-12 03:00:02.352171', '2025-03-12 03:00:02.352171');
+            INSERT INTO usuario (id, nome, email, senha, status, data_cadastro, data_alteracao) VALUES('b749d8fe-280b-40a4-a87f-d156dfeb28ed', 'Jeferson', 'jeferson@gmail.com', '{bcrypt}$2a$10$oAoaJ1Brai3IUO1JkHuRmutox.lB7LGeybgqv66yRIX2tz7Wke2qC', 'ATIVO', '2025-03-12 02:58:37.617985', '2025-03-12 02:58:37.617985');
+            INSERT INTO usuario (id, nome, email, senha, status, data_cadastro, data_alteracao) VALUES('c359c343-d544-4f72-acaa-3b29d9d2e5d6', 'Heleno', 'heleno@gmail.com', '{bcrypt}$2a$10$z7E6gLGo38QbtGdEy4CGvO5l1h.mbaJHdJeLGmGRxvfFiGsPLVdJC', 'ATIVO', '2025-03-12 03:01:04.787641', '2025-03-12 03:01:04.787641');
+            INSERT INTO usuario (id, nome, email, senha, status, data_cadastro, data_alteracao) VALUES('fa1629a9-e787-4759-8764-8fcab8d428f8', 'Emanuel', 'emanuel@gmail.com', '{bcrypt}$2a$10$MGE2GO4GGjhLdn.RwBMcr.TjQJSn4I1vW8zRv2q8ugwlGukc3Mce6', 'ATIVO', '2025-03-12 02:59:53.166484', '2025-03-12 02:59:53.166484');
+        </sql>
+    </changeSet>
+
+
+</databaseChangeLog>

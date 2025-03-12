@@ -1,0 +1,23 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.22.xsd">
+    <changeSet id="05-table-produto" author="heleno.souza">
+        <sql>
+            -- Tabela: produto
+            CREATE TABLE `produto`
+            (
+                `id`             CHAR(36)     NOT NULL,
+                `nome`           VARCHAR(255) NOT NULL,
+                `descricao`      TEXT NULL,
+                `preco`          DECIMAL NOT NULL,
+                `categoria`      VARCHAR(255) NOT NULL,
+                `quantidade_em_estoque`           int NOT NULL,
+                `data_cadastro`  DATETIME(6)  DEFAULT NULL,
+                `data_alteracao` DATETIME(6)  DEFAULT NULL,
+                PRIMARY KEY (`id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+        </sql>
+    </changeSet>
+</databaseChangeLog>

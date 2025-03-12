@@ -1,0 +1,17 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.22.xsd">
+
+    <include file="liquibase/changelog/01-inicializacao.xml"/>
+    <include file="liquibase/changelog/02-insert-role.xml"/>
+    <include file="liquibase/changelog/03-insert-usuario.xml"/>
+    <include file="liquibase/changelog/04-insert-usuario_role.xml"/>
+    <include file="liquibase/changelog/05-table-produto.xml"/>
+    <include file="liquibase/changelog/06-table-pedido.xml"/>
+    <include file="liquibase/changelog/07-insert-produtos.xml"/>
+    <include file="liquibase/changelog/08-insert-pedidos.xml"/>
+    <include file="liquibase/changelog/09-insert-pedidos-items.xml"/>
+
+</databaseChangeLog>
